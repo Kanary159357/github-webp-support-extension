@@ -1,3 +1,3 @@
 # WXT + React
 
-This template should help get you started developing with React in WXT.
+Add feature for github web to support webp on preview
