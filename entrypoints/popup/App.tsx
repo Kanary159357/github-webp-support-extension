@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 
 function App() {
   const [scriptInjected, setScriptInjected] = useState(false);
@@ -9,7 +8,6 @@ function App() {
       const initialValue = await browser.runtime.sendMessage({
         action: "getToggleState",
       });
-      console.log("initialValue", initialValue);
       setScriptInjected(initialValue.isEnabled);
     }
     init();
